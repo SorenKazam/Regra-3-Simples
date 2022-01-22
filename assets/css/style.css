@@ -6,8 +6,8 @@
 }
 
 html {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -16,6 +16,7 @@ html {
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    margin: 20px;
 }
 
 .cabecalho-img {
@@ -32,5 +33,90 @@ html {
     font-weight: 200;
     font-size: 20px;
     color: white;
+    font-style: italic;
+}
+
+.calculadora {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row-reverse;
+}
+
+.calculadora-corpo {
+    display: flex;
+    flex-flow: column;
+    border: 5px solid white;
+    border-radius: 50px;
+}
+
+.calculadora-corpo-row1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    margin: 10px;
+}
+
+.calculadora-corpo-row2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    margin: 10px;
+}
+
+.calculadora-corpo-row3 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    margin: 10px;
+}
+
+.span-meio {
+    display: flex;
+    margin: 5px;
+    flex-flow: row;
+    align-self: center;
+    color: white;
+}
+
+input[type=number], select {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 8px 0;
+    display: flex;
+    flex-flow: row;
+    border: 1px solid orangered;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+  }
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin: 20px;
+}
+
+.sobre-titulo {
+    font-weight: 400;
+    font-size: 40px;
+    color: white;
+}
+
+.sobre-descricao {
+    max-width: 70%;
+    line-height: 1.8rem;
+    color: white;
+}
+
+.sobre-descricao-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: purple;
+    font-weight: 400;
     font-style: italic;
 }
