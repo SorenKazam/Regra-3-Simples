@@ -114,11 +114,17 @@ input[type=number], select {
 }
 
 .sobre-descricao-link {
-    cursor: pointer;
-    text-decoration: none;
     color: black;
-    font-weight: 400;
-    font-style: italic;
+    text-decoration: none;
+    line-height: 1.8rem;
+    cursor: pointer;
+}
+
+.sobre-descricao-link:hover {
+    color: blue;
+    text-decoration: underline;
+    line-height: 1.8rem;
+    cursor: pointer;
 }
 
 .butaoResetar {
@@ -133,4 +139,25 @@ input[type=number], select {
     width: 100px;
     cursor: pointer;
     margin: 5px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-flow: column;
+    color: black;
+    justify-content: space-around;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    line-height: 1.8rem;
+}
+
+.footer a:hover {
+    color: blue;
+    text-decoration: underline;
+    line-height: 1.8rem;
 }
