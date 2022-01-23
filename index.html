@@ -8,7 +8,6 @@
     <meta name="Tiago Guerreiro" content="SitePoint">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="js/scripts.js"></script>
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/fav/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/fav/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./assets/fav/apple-icon-72x72.png">
@@ -38,9 +37,9 @@
         <div class="calculadora">
             <div class="calculadora-corpo">
                 <div class="calculadora-corpo-row1">
-                    <label for="numero1"><input type="number" required placeholder="Primeiro valor"></label>
+                    <label for="numero1"><input id="valor1" type="number" required placeholder="Primeiro valor"></label>
                     <span class="span-meio">Está para</span>
-                    <label for="numero1"><input type="number" required placeholder="Segundo valor"></label>
+                    <label for="numero1"><input id="valor2" type="number" required placeholder="Segundo valor"></label>
                 </div>
                 
                 <div class="calculadora-corpo-row2">
@@ -48,12 +47,13 @@
                 </div>
 
                 <div class="calculadora-corpo-row3">
-                    <label for="numero1"><input type="number" required placeholder="Terceiro valor"></label>
+                    <label for="numero1"><input id="valor3" type="number" required placeholder="Terceiro valor"></label>
                     <span class="span-meio">Está para</span>
-                    <label for="numero1"><input type="number" readonly placeholder="Valor de X"></label>
+                    <label for="numero1"><input id="valor4" type="number" required placeholder="Quarto valor"></label>
                 </div>
-                <span class="span-meio">Resolução: x = (valor3) x (valor2) / (valor1) = (valorResultado)</span>
-            </div>
+                <span class="span-meio">Resolução: x = <h1 id="valor1"> Valor 1 </h1> * <h1 id="valor2"> Valor 2 </h1> / <h1 id="valor3"> Valor 3 </h1> = <h1 id="resultado"> Resultado </h1></span>
+                <span class="span-meio"><button type="reset" class="butaoResetar" id="delete">Resetar</button></span>
+            </div>            
         </div>
     
 
@@ -73,7 +73,9 @@ O cálculo da regra de 3 é feito separando-se os valores em duas colunas. Na pr
     </div>
 
     <div class="footer">
-
+        <h5><i class="fab fa-github"></i> <a href="https://github.com/SorenKazam" target="_blank">SorenKazam</a></h5>
+        <h5><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/tiago-guerreiro-854a04123/" target="_blank">Tiago Guerreiro</a></h5>
     </div>
+    <script type="text/javascript" src="./js/scripts.js"></script>
 </body>
 </html>

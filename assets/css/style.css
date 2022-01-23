@@ -47,7 +47,7 @@ html {
 .calculadora-corpo {
     display: flex;
     flex-flow: column;
-    border: 5px solid white;
+    border: 5px solid #cccccc;
     border-radius: 50px;
 }
 
@@ -86,12 +86,12 @@ input[type=number], select {
     margin: 8px 0;
     display: flex;
     flex-flow: row;
-    border: 1px solid orangered;
+    border: 2px solid #cccccc;
     border-radius: 50px;
     box-sizing: border-box;
     font-size: 20px;
     text-align: center;
-  }
+}
 
 .sobre {
     display: flex;
@@ -116,7 +116,21 @@ input[type=number], select {
 .sobre-descricao-link {
     cursor: pointer;
     text-decoration: none;
-    color: purple;
+    color: black;
     font-weight: 400;
     font-style: italic;
+}
+
+.butaoResetar {
+    display: inline-block;
+    background-color: white;
+    border-radius: 50px;
+    border: 2px solid #cccccc;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    margin: 5px;
 }
